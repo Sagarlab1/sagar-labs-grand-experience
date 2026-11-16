@@ -9,42 +9,42 @@
       "permanent": false
     },
     {
-      "source": "/es/about",
+      "source": "/es/about/",
       "destination": "/es/nosotros/",
       "permanent": true
     },
     {
-      "source": "/es/contact",
+      "source": "/es/contact/",
       "destination": "/es/contacto/",
       "permanent": true
     },
     {
-      "source": "/es/platform",
+      "source": "/es/platform/",
       "destination": "/es/infraestructura/",
       "permanent": true
     },
     {
-      "source": "/en/platform",
+      "source": "/en/platform/",
       "destination": "/en/infrastructure/",
       "permanent": true
     },
     {
-      "source": "/en/research/superionic-halide",
+      "source": "/en/research/superionic-halide/",
       "destination": "/en/materials/superionic-halide/",
       "permanent": true
     },
     {
-      "source": "/en/research/graphene-thermal",
+      "source": "/en/research/graphene-thermal/",
       "destination": "/en/materials/graphene-thermal/",
       "permanent": true
     },
     {
-      "source": "/en/research/nanoporous-mof",
+      "source": "/en/research/nanoporous-mof/",
       "destination": "/en/materials/nanoporous-mof/",
       "permanent": true
     },
     {
-      "source": "/en/research/graphene-membrane",
+      "source": "/en/research/graphene-membrane/",
       "destination": "/en/materials/graphene-membrane/",
       "permanent": true
     }
@@ -83,52 +83,100 @@
   ],
   "rewrites": [
     {
-      "source": "/en/atlas/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/atlas/:path*"
+      "source": "/es/atlas/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/atlas/"
     },
     {
-      "source": "/en/capital/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/capital/:path*"
+      "source": "/es/atlas/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/atlas/:path*/"
     },
     {
-      "source": "/en/learn/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/learn/:path*"
+      "source": "/es/capital/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/capital/"
     },
     {
-      "source": "/en/products/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/products/:path*"
+      "source": "/es/capital/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/capital/:path*/"
     },
     {
-      "source": "/en/research/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/research/:path*"
+      "source": "/es/learn/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/learn/"
     },
     {
-      "source": "/en/co-development-readiness/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/co-development-readiness/:path*"
+      "source": "/es/learn/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/learn/:path*/"
     },
     {
-      "source": "/es/atlas/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/atlas/:path*"
+      "source": "/es/products/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/products/"
     },
     {
-      "source": "/es/capital/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/capital/:path*"
+      "source": "/es/products/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/products/:path*/"
     },
     {
-      "source": "/es/learn/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/learn/:path*"
+      "source": "/es/research/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/research/"
     },
     {
-      "source": "/es/products/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/products/:path*"
+      "source": "/es/research/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/research/:path*/"
     },
     {
-      "source": "/es/research/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/research/:path*"
+      "source": "/es/co-development-readiness/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/co-development-readiness/"
     },
     {
-      "source": "/es/co-development-readiness/:path*",
-      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/co-development-readiness/:path*"
+      "source": "/es/co-development-readiness/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/co-development-readiness/:path*/"
+    },
+    {
+      "source": "/en/atlas/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/atlas/"
+    },
+    {
+      "source": "/en/atlas/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/atlas/:path*/"
+    },
+    {
+      "source": "/en/capital/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/capital/"
+    },
+    {
+      "source": "/en/capital/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/capital/:path*/"
+    },
+    {
+      "source": "/en/learn/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/learn/"
+    },
+    {
+      "source": "/en/learn/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/learn/:path*/"
+    },
+    {
+      "source": "/en/products/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/products/"
+    },
+    {
+      "source": "/en/products/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/products/:path*/"
+    },
+    {
+      "source": "/en/research/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/research/"
+    },
+    {
+      "source": "/en/research/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/research/:path*/"
+    },
+    {
+      "source": "/en/co-development-readiness/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/co-development-readiness/"
+    },
+    {
+      "source": "/en/co-development-readiness/:path*/",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/co-development-readiness/:path*/"
     },
     {
       "source": "/_next/:path*",
@@ -154,5 +202,6 @@
       "source": "/favicon.ico",
       "destination": "https://sagar-labs-website-jz3r.vercel.app/favicon.ico"
     }
-  ]
+  ],
+  "framework": null
 }
