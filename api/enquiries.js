@@ -1,0 +1,3 @@
+const {productionService}=require('../lib/enquiries.cjs');
+const handle=productionService();
+module.exports=async function(req,res){if(Number(req.headers['content-length']||0)>16000||Buffer.byteLength(JSON.stringify(req.body||{}))>16000){res.statusCode=413;res.setHeader('Cache-Control','no-store');return res.end(JSON.stringify({ok:false,code:'request_too_large'}))}const output=await handle({method:req.method,headers:req.headers,body:req.body,ip:String(req.headers['x-forwarded-for']||'unknown').split(',')[0].trim()});res.statusCode=output.status;for(const[k,v]of Object.entries(output.headers))res.setHeader(k,v);res.end(JSON.stringify(output.body))};

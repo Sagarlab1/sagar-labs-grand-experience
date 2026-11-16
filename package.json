@@ -1,0 +1,15 @@
+{
+  "name": "sagar-labs",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node server.cjs",
+    "start": "node server.cjs",
+    "test": "npm run build && node --test test/*.test.cjs test/*.test.mjs",
+    "enquiries": "node scripts/read-enquiries.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
