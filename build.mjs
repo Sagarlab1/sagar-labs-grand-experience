@@ -4,7 +4,7 @@ import {products,ui,contact} from './src/content.mjs';
 const out=path.resolve('dist');
 const siteURL=new URL(process.env.SITE_URL||'https://www.sagarlabs.com').origin;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const slugs={es:{home:'',cybercat:'cybercat',infra:'infraestructura',research:'investigacion',sample:'muestra-informe',about:'nosotros',contact:'contacto',privacy:'privacidad'},en:{home:'',cybercat:'cybercat',infra:'infrastructure',research:'research',sample:'sample-brief',about:'about',contact:'contact',privacy:'privacy'}};
+const slugs={es:{home:'',cybercat:'cybercat',infra:'infraestructura',research:'investigacion',sample:'muestra-informe',about:'nosotros',contact:'contacto',privacy:'privacidad'},en:{home:'',cybercat:'cybercat',infra:'infrastructure',research:'materials',sample:'sample-brief',about:'about',contact:'contact',privacy:'privacy'}};
 const href=(lang,key)=>`/${lang}/${key.startsWith('product:')?slugs[lang].research+'/'+key.slice(8):slugs[lang][key]}/`.replace(/\/+/g,'/');
 const choose=(l,es,en)=>l==='es'?es:en;
 const icon='<span aria-hidden="true">↗</span>';

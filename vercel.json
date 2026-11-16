@@ -1,1 +1,158 @@
-{"buildCommand":"npm run build","outputDirectory":"dist","trailingSlash":true,"redirects":[{"source":"/","destination":"/es/","permanent":false}],"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"},{"key":"X-Frame-Options","value":"DENY"},{"key":"Permissions-Policy","value":"camera=(), microphone=(), geolocation=()"}]},{"source":"/api/(.*)","headers":[{"key":"Cache-Control","value":"no-store"}]}]}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/es/",
+      "permanent": false
+    },
+    {
+      "source": "/es/about",
+      "destination": "/es/nosotros/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contact",
+      "destination": "/es/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/es/platform",
+      "destination": "/es/infraestructura/",
+      "permanent": true
+    },
+    {
+      "source": "/en/platform",
+      "destination": "/en/infrastructure/",
+      "permanent": true
+    },
+    {
+      "source": "/en/research/superionic-halide",
+      "destination": "/en/materials/superionic-halide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/research/graphene-thermal",
+      "destination": "/en/materials/graphene-thermal/",
+      "permanent": true
+    },
+    {
+      "source": "/en/research/nanoporous-mof",
+      "destination": "/en/materials/nanoporous-mof/",
+      "permanent": true
+    },
+    {
+      "source": "/en/research/graphene-membrane",
+      "destination": "/en/materials/graphene-membrane/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/en/atlas/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/atlas/:path*"
+    },
+    {
+      "source": "/en/capital/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/capital/:path*"
+    },
+    {
+      "source": "/en/learn/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/learn/:path*"
+    },
+    {
+      "source": "/en/products/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/products/:path*"
+    },
+    {
+      "source": "/en/research/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/research/:path*"
+    },
+    {
+      "source": "/en/co-development-readiness/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/en/co-development-readiness/:path*"
+    },
+    {
+      "source": "/es/atlas/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/atlas/:path*"
+    },
+    {
+      "source": "/es/capital/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/capital/:path*"
+    },
+    {
+      "source": "/es/learn/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/learn/:path*"
+    },
+    {
+      "source": "/es/products/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/products/:path*"
+    },
+    {
+      "source": "/es/research/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/research/:path*"
+    },
+    {
+      "source": "/es/co-development-readiness/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/es/co-development-readiness/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/_next/:path*"
+    },
+    {
+      "source": "/site.webmanifest",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/site.webmanifest"
+    },
+    {
+      "source": "/assets/sagar-mark.svg",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/assets/sagar-mark.svg"
+    },
+    {
+      "source": "/icon.svg",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/icon.svg"
+    },
+    {
+      "source": "/apple-icon.png",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/apple-icon.png"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://sagar-labs-website-jz3r.vercel.app/favicon.ico"
+    }
+  ]
+}

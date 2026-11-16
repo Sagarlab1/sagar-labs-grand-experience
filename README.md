@@ -6,7 +6,7 @@ Sitio ES/EN con CyberCat, inteligencia de infraestructura y catálogo de investi
 
 Node.js 20 o posterior. Sin dependencias externas. Ejecutar `npm run dev` y abrir http://127.0.0.1:4173/es/.
 
-`npm test` compila 24 páginas y ejecuta 12 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
+`npm test` compila 24 páginas y ejecuta 13 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
 
 ## Despliegue
 
@@ -19,3 +19,9 @@ La función `api/enquiries.js` requiere las variables de `.env.example`, solo en
 CyberCat es un producto en evolución. Las propuestas de materiales no se presentan como tecnologías industrialmente validadas. La muestra de informe es ilustrativa. Completar el aviso de privacidad y verificar la recepción real antes de activar el formulario.
 
 La publicación mantiene el dominio y los repositorios anteriores. Antes de migrar sagarlabs.com, conservar o redirigir sus rutas editoriales e institucionales.
+
+## Dominio principal y páginas anteriores
+
+Dominio canónico: https://www.sagarlabs.com. Vercel mantiene la redirección del dominio raíz a www. El catálogo de materiales inglés usa `/en/materials/`, dejando `/en/research/` para los informes anteriores. `vercel.json` conserva las páginas de Atlas, Capital, Learn, productos e informes mediante rewrites al despliegue anterior `sagar-labs-website-jz3r.vercel.app`; mantener ese proyecto activo. Las rutas de contacto, equipo y plataforma con equivalentes nuevos redirigen a sus destinos.
+
+Para rollback, volver a asignar ambos dominios al proyecto anterior conservando la redirección del raíz a www. No se cambian los nameservers ni los registros de correo.
