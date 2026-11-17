@@ -1,0 +1,246 @@
+{
+  "product_code": "SL/005",
+  "title": "Sagar BMS Digital Twin SDK",
+  "classification": "synthetic_demo",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "ESTIMATED"
+  ],
+  "review_date": "2026-11-16",
+  "export_record_count": 10539,
+  "included_sample_count": 10,
+  "source_export_sha256": "0a400612fc42bd924aa2cc9a6616d302dd7f80466a53490ad8a9d451224b0960",
+  "method_review": {
+    "generator_file": "autonomous_loop.js",
+    "method": "iterateBMSBatteryTwinSaaS",
+    "generator_sha256": "e29c19129cef77d3938f0de22b52cbb258ed818100be6c928a6c5ad1916ec133",
+    "finding_en": "Metrics in the inspected generator are assigned from random ranges and fixed constants. These records do not establish model training, physical simulation, measured benchmarks or a built installation.",
+    "finding_es": "El generador inspeccionado asigna las métricas mediante rangos aleatorios y constantes. Estos registros no acreditan entrenamiento, simulación física, benchmarks medidos ni una instalación construida."
+  },
+  "database_snapshot": {
+    "pipeline": "bms_digital_twin",
+    "record_count": 10549,
+    "note": "Record count in a read-only snapshot; not a count of independently trained models or validated designs."
+  },
+  "notice_es": "Demostración conceptual con datos sintéticos. Los valores score y evidence_count del export original son campos del generador; no son certificaciones ni conteos de validaciones independientes. Los nombres de empresas indican destinatarios comerciales propuestos, no clientes o relaciones verificadas. Los precios son referencias comerciales propuestas.",
+  "notice_en": "Concept demonstration with synthetic data. The original export score and evidence_count fields are generator fields, not certifications or counts of independent validations. Company names describe proposed target markets, not verified customers or relationships. Prices are proposed commercial references.",
+  "original_export": {
+    "product_code": "SL/005",
+    "title": "Sagar BMS Digital Twin SDK",
+    "evidence_count": 10539,
+    "top_models": [
+      {
+        "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1925,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.93,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 07:16:55"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1610,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.23,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 07:26:06"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1499,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.59,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 07:35:06"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1498,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.21,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 07:49:56"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1494,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":3.07,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 07:53:56"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Electrochemical-Impedance-Observer",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Electrochemical-Impedance-Observer\",\"cycle_prediction_horizon\":1389,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.63,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 07:58:36"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Physics-Informed-Neural-Network\",\"cycle_prediction_horizon\":1606,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":2.48,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 08:17:56"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Physics-Informed-Neural-Network\",\"cycle_prediction_horizon\":1771,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":3.07,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 08:35:36"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Electrochemical-Impedance-Observer",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Electrochemical-Impedance-Observer\",\"cycle_prediction_horizon\":1809,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":2.97,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 08:48:07"
+      },
+      {
+        "candidate_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+        "score": 99.15,
+        "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Physics-Informed-Neural-Network\",\"cycle_prediction_horizon\":1358,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.76,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+        "created_at": "2026-11-15 10:17:28"
+      }
+    ]
+  },
+  "normalized_samples": [
+    {
+      "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1925,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.93,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 07:16:55",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "cycle_prediction_horizon": 1925,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 1.93,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1610,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.23,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 07:26:06",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "cycle_prediction_horizon": 1610,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 1.23,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1499,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.59,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 07:35:06",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "cycle_prediction_horizon": 1499,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 1.59,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1498,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.21,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 07:49:56",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "cycle_prediction_horizon": 1498,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 1.21,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Extended-Kalman-Filter-EIS\",\"cycle_prediction_horizon\":1494,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":3.07,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 07:53:56",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Extended-Kalman-Filter-EIS",
+        "cycle_prediction_horizon": 1494,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 3.07,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Electrochemical-Impedance-Observer",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Electrochemical-Impedance-Observer\",\"cycle_prediction_horizon\":1389,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.63,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 07:58:36",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Electrochemical-Impedance-Observer",
+        "cycle_prediction_horizon": 1389,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 1.63,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Physics-Informed-Neural-Network\",\"cycle_prediction_horizon\":1606,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":2.48,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 08:17:56",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+        "cycle_prediction_horizon": 1606,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 2.48,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Physics-Informed-Neural-Network\",\"cycle_prediction_horizon\":1771,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":3.07,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 08:35:36",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+        "cycle_prediction_horizon": 1771,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 3.07,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Electrochemical-Impedance-Observer",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Electrochemical-Impedance-Observer\",\"cycle_prediction_horizon\":1809,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":2.97,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 08:48:07",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Electrochemical-Impedance-Observer",
+        "cycle_prediction_horizon": 1809,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 2.97,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    },
+    {
+      "candidate_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+      "score": 99.15,
+      "metrics_json": "{\"model_name\":\"Sagar-BMS-Twin-Physics-Informed-Neural-Network\",\"cycle_prediction_horizon\":1358,\"soh_error_margin_percent\":0.85,\"realtime_inference_ms\":1.76,\"target_market\":\"Utility BESS & High-Performance EV Fleets\",\"deployment_format\":\"Edge WebAssembly / Python Microservice\",\"annual_saas_tier_usd\":12000}",
+      "created_at": "2026-11-15 10:17:28",
+      "metrics": {
+        "model_name": "Sagar-BMS-Twin-Physics-Informed-Neural-Network",
+        "cycle_prediction_horizon": 1358,
+        "soh_error_margin_percent": 0.85,
+        "realtime_inference_ms": 1.76,
+        "target_market": "Utility BESS & High-Performance EV Fleets",
+        "deployment_format": "Edge WebAssembly / Python Microservice",
+        "annual_saas_tier_usd": 12000
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Sitio ES/EN con CyberCat, inteligencia de infraestructura y catálogo de investi
 
 Node.js 20 o posterior. Sin dependencias externas. Ejecutar `npm run dev` y abrir http://127.0.0.1:4173/es/.
 
-`npm test` compila 28 páginas y ejecuta 14 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
+`npm test` compila 28 páginas y ejecuta 15 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
 
 ## Despliegue
 
@@ -29,3 +29,9 @@ Para rollback, volver a asignar ambos dominios al proyecto anterior conservando 
 ## Catálogo actualizado
 
 Seis propuestas de investigación y desarrollo, incluyendo Sagar BMS Digital Twin SDK y Net-Zero AI Datacenter Architecture. Versiones ES/EN, visuales SVG originales y esculturas interactivas, datos reportados por el propietario, fichas informativas descargables y referencias comerciales sujetas a alcance. Las cifras del informe del 16 de noviembre de 2026 no se presentan como validación experimental ni como evidencia auditada. No se han adjuntado datos primarios, SDK ejecutable ni planos constructivos.
+
+## Procedencia de SL/005 y SL/006
+
+Los JSON originales facilitados por Sagar Labs están incluidos dentro de paquetes de demostración con etiquetas HYPOTHESIS / ESTIMATED, una nota de revisión del generador y muestras normalizadas. El export declara 10,539 registros por producto e incluye 10 filas, no 10,539 modelos entrenados ni diseños validados. La revisión confirmó parámetros asignados con Math.random() y constantes. Las cifras se muestran como ejemplos sintéticos, sin garantías de precisión, latencia, PUE o neutralidad de carbono.
+
+El render conjunto de Blender facilitado por Sagar Labs se publica como imagen conceptual original. La documentación de otros programas de I+D, protocolos y subvenciones se evalúa por separado; esta revisión se limita a los dos generadores mencionados.

@@ -1,0 +1,246 @@
+{
+  "product_code": "SL/006",
+  "title": "Net-Zero AI Datacenter Engineering Blueprint",
+  "classification": "synthetic_demo",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "ESTIMATED"
+  ],
+  "review_date": "2026-11-16",
+  "export_record_count": 10539,
+  "included_sample_count": 10,
+  "source_export_sha256": "233b63b0b9e92e12d0234f66047b4e8d0b2badfabb995efedfc0d5c965bbb19b",
+  "method_review": {
+    "generator_file": "autonomous_loop.js",
+    "method": "iterateNetZeroDataCenterSolutions",
+    "generator_sha256": "e29c19129cef77d3938f0de22b52cbb258ed818100be6c928a6c5ad1916ec133",
+    "finding_en": "Metrics in the inspected generator are assigned from random ranges and fixed constants. These records do not establish model training, physical simulation, measured benchmarks or a built installation.",
+    "finding_es": "El generador inspeccionado asigna las métricas mediante rangos aleatorios y constantes. Estos registros no acreditan entrenamiento, simulación física, benchmarks medidos ni una instalación construida."
+  },
+  "database_snapshot": {
+    "pipeline": "netzero_datacenter_spec",
+    "record_count": 10549,
+    "note": "Record count in a read-only snapshot; not a count of independently trained models or validated designs."
+  },
+  "notice_es": "Demostración conceptual con datos sintéticos. Los valores score y evidence_count del export original son campos del generador; no son certificaciones ni conteos de validaciones independientes. Los nombres de empresas indican destinatarios comerciales propuestos, no clientes o relaciones verificadas. Los precios son referencias comerciales propuestas.",
+  "notice_en": "Concept demonstration with synthetic data. The original export score and evidence_count fields are generator fields, not certifications or counts of independent validations. Company names describe proposed target markets, not verified customers or relationships. Prices are proposed commercial references.",
+  "original_export": {
+    "product_code": "SL/006",
+    "title": "Net-Zero AI Datacenter Engineering Blueprint",
+    "evidence_count": 10539,
+    "top_specs": [
+      {
+        "candidate_name": "NetZero-DC-Apex-80kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-80kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.6,\"annual_co2_abatement_tons\":680,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 07:07:36"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":99.3,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 07:19:16"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-120kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-120kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":98,\"annual_co2_abatement_tons\":1020,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 07:45:36"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.2,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 08:03:26"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-120kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-120kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.4,\"annual_co2_abatement_tons\":1020,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 08:24:06"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-80kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-80kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":95.1,\"annual_co2_abatement_tons\":680,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 08:43:47"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-120kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-120kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.9,\"annual_co2_abatement_tons\":1020,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 09:15:47"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.6,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 09:28:37"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.2,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 09:38:27"
+      },
+      {
+        "candidate_name": "NetZero-DC-Apex-80kW-Rack",
+        "score": 96.15384615384615,
+        "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-80kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":98.2,\"annual_co2_abatement_tons\":680,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+        "created_at": "2026-11-15 09:41:07"
+      }
+    ]
+  },
+  "normalized_samples": [
+    {
+      "candidate_name": "NetZero-DC-Apex-80kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-80kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.6,\"annual_co2_abatement_tons\":680,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 07:07:36",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-80kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 97.6,
+        "annual_co2_abatement_tons": 680,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":99.3,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 07:19:16",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-200kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 99.3,
+        "annual_co2_abatement_tons": 1700,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-120kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-120kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":98,\"annual_co2_abatement_tons\":1020,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 07:45:36",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-120kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 98,
+        "annual_co2_abatement_tons": 1020,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.2,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 08:03:26",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-200kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 97.2,
+        "annual_co2_abatement_tons": 1700,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-120kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-120kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.4,\"annual_co2_abatement_tons\":1020,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 08:24:06",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-120kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 97.4,
+        "annual_co2_abatement_tons": 1020,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-80kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-80kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":95.1,\"annual_co2_abatement_tons\":680,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 08:43:47",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-80kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 95.1,
+        "annual_co2_abatement_tons": 680,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-120kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-120kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.9,\"annual_co2_abatement_tons\":1020,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 09:15:47",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-120kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 97.9,
+        "annual_co2_abatement_tons": 1020,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.6,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 09:28:37",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-200kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 97.6,
+        "annual_co2_abatement_tons": 1700,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-200kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-200kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":97.2,\"annual_co2_abatement_tons\":1700,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 09:38:27",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-200kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 97.2,
+        "annual_co2_abatement_tons": 1700,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    },
+    {
+      "candidate_name": "NetZero-DC-Apex-80kW-Rack",
+      "score": 96.15384615384615,
+      "metrics_json": "{\"solution_id\":\"NetZero-DC-Apex-80kW-Rack\",\"pue_efficiency\":1.04,\"heat_recovery_efficiency_pct\":88.5,\"water_recycle_percent\":98.2,\"annual_co2_abatement_tons\":680,\"capex_payback_years\":2.1,\"target_clients\":\"Hyperscalers (AWS, GCP, Meta, OCI)\"}",
+      "created_at": "2026-11-15 09:41:07",
+      "metrics": {
+        "solution_id": "NetZero-DC-Apex-80kW-Rack",
+        "pue_efficiency": 1.04,
+        "heat_recovery_efficiency_pct": 88.5,
+        "water_recycle_percent": 98.2,
+        "annual_co2_abatement_tons": 680,
+        "capex_payback_years": 2.1,
+        "target_clients": "Hyperscalers (AWS, GCP, Meta, OCI)"
+      }
+    }
+  ]
+}

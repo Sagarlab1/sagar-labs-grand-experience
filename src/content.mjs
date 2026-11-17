@@ -278,65 +278,71 @@ export const products=[
     "es": {
       "title": "Sagar BMS Digital Twin SDK",
       "category": "Software · Gemelos digitales de baterías",
-      "status": "SOFTWARE EN EVOLUCIÓN",
-      "summary": "Una propuesta de SDK para estudiar degradación de celdas y apoyar el análisis de baterías en flotas eléctricas y almacenamiento solar.",
+      "status": "CONCEPTO DE INGENIERÍA · [HYPOTHESIS]",
+      "summary": "Concepto de SDK para explorar la estimación del estado de salud de baterías en flotas y almacenamiento. La demostración ilustra formatos de datos y posibles flujos de integración.",
       "question": "¿Qué puede predecir el modelo en las celdas y condiciones reales de tu operación?",
       "metrics": [
         {
-          "value": "10,461",
-          "label": "Modelos entrenados reportados"
+          "value": "10,539",
+          "label": "Registros sintéticos declarados en el export"
         },
         {
-          "value": "99.15%",
-          "label": "Precisión declarada en el informe"
+          "value": "99.15",
+          "label": "Score generado; no precisión medida"
         },
         {
-          "value": "1.64 ms",
-          "label": "Latencia de inferencia declarada"
+          "value": "1.21–3.07 ms",
+          "label": "Latencias de ejemplo en la muestra de 10 filas"
         }
       ],
-      "evidence": "El informe de CyberCat declara 10,461 modelos entrenados, 99.15% de precisión y 1.64 ms de inferencia. No se adjuntan aquí el dataset, la definición de precisión, el conjunto de prueba independiente ni el hardware de medición. Las cifras no constituyen una garantía para nuevas químicas, flotas o condiciones de uso.",
+      "evidence": "El método inspeccionado selecciona una de cuatro etiquetas de algoritmo y asigna horizonte de ciclos, margen de error e inferencia mediante Math.random(). El score se calcula como 100 menos ese margen sintético. Por tanto, 99.15 no acredita precisión predictiva y los milisegundos no proceden de un benchmark ejecutado en este método. El JSON adjunto conserva el export original y documenta esta procedencia; no contiene un SDK ejecutable ni un modelo entrenado.",
       "requirements": [
         "Definir la variable objetivo: estado de salud, capacidad o vida útil",
         "Datos, partición de entrenamiento y prueba, referencia e incertidumbre",
         "Hardware y condiciones de latencia; pruebas fuera de distribución",
         "Repositorio, documentación de API y compatibilidad real con BMS"
       ],
-      "scope": "Licencia anual de software propuesta para equipos de flotas y almacenamiento. API, integración, soporte, acceso al código y derechos se acuerdan tras la evaluación técnica.",
+      "scope": "Marco metodológico y propuesta de desarrollo de un SDK. Un producto distribuible, sus interfaces, modelos, soporte y derechos requieren implementación, pruebas y acuerdo de alcance. El dossier actual es una demostración de especificaciones.",
       "price": "USD 12,000 / año",
-      "priceNote": "Precio anual de referencia facilitado por Sagar Labs. Alcance, impuestos y condiciones de licencia por confirmar."
+      "priceNote": "Referencia comercial propuesta para un eventual desarrollo y contrato. No corresponde a un SDK validado listo para descarga.",
+      "dataNotice": "[ESTIMATED] Datos sintéticos del generador. No son resultados de entrenamiento, ensayos o una instalación real.",
+      "sourceNote": "Dossier JSON facilitado por Sagar Labs, con 10,539 registros declarados en el export y una muestra incluida de 10 filas. Se revisó en modo de solo lectura la base local y se inspeccionó el generador. Los conteos reflejan registros procedurales, no validaciones independientes."
     },
     "en": {
       "title": "Sagar BMS Digital Twin SDK",
       "category": "Software · Battery digital twins",
-      "status": "SOFTWARE IN DEVELOPMENT",
-      "summary": "A proposed SDK to study cell degradation and support battery analysis for electric fleets and solar energy storage.",
+      "status": "ENGINEERING CONCEPT · [HYPOTHESIS]",
+      "summary": "An SDK concept for exploring battery state-of-health estimation in fleets and energy storage. The demonstration illustrates data formats and possible integration workflows.",
       "question": "What can the model predict for the cells and operating conditions in your deployment?",
       "metrics": [
         {
-          "value": "10,461",
-          "label": "Reported trained models"
+          "value": "10,539",
+          "label": "Synthetic records reported in the export"
         },
         {
-          "value": "99.15%",
-          "label": "Accuracy claimed in the report"
+          "value": "99.15",
+          "label": "Generated score; not measured accuracy"
         },
         {
-          "value": "1.64 ms",
-          "label": "Reported inference latency"
+          "value": "1.21–3.07 ms",
+          "label": "Example latencies in the 10-row sample"
         }
       ],
-      "evidence": "The CyberCat report claims 10,461 trained models, 99.15% accuracy and 1.64 ms inference. The dataset, accuracy definition, independent test set and measurement hardware are not attached here. These figures do not guarantee performance for new chemistries, fleets or operating conditions.",
+      "evidence": "The inspected method selects one of four algorithm labels and assigns cycle horizon, error margin and inference time using Math.random(). Its score is 100 minus that synthetic margin. Consequently, 99.15 does not establish predictive accuracy and the milliseconds are not an executed benchmark in this method. The attached JSON preserves the original export and documents this provenance; it does not contain an executable SDK or trained model.",
       "requirements": [
         "Define the prediction target: state of health, capacity or remaining life",
         "Data, training/test split, baseline and uncertainty",
         "Latency hardware and conditions; out-of-distribution testing",
         "Repository, API documentation and actual BMS compatibility"
       ],
-      "scope": "Proposed annual software licensing for fleet and energy storage teams. API, integration, support, source access and rights are agreed after technical assessment.",
+      "scope": "Methodological framework and SDK development proposal. A distributable product, interfaces, models, support and rights require implementation, testing and an agreed scope. The current dossier demonstrates specifications.",
       "price": "USD 12,000 / year",
-      "priceNote": "Annual reference price supplied by Sagar Labs. Scope, taxes and license terms remain to be confirmed."
-    }
+      "priceNote": "Proposed commercial reference for future development and contracting. This is not a validated SDK ready for download.",
+      "dataNotice": "[ESTIMATED] Synthetic generator data. Not training results, test measurements or an operating installation.",
+      "sourceNote": "JSON dossier supplied by Sagar Labs, reporting 10,539 export records with a 10-row sample included. The local database was reviewed read-only and the generator inspected. Counts represent procedural records, not independent validations."
+    },
+    "dossier": "/assets/dossiers/bms-digital-twin-sdk.json",
+    "showcase": "/assets/sl005-sl006-showcase.png"
   },
   {
     "slug": "net-zero-ai-datacenter",
@@ -348,65 +354,87 @@ export const products=[
     "es": {
       "title": "Net-Zero AI Datacenter Architecture",
       "category": "Blueprint · Infraestructura de IA",
-      "status": "BLUEPRINT EN EVOLUCIÓN",
-      "summary": "Arquitectura propuesta para estudiar juntos refrigeración, energía, recirculación de agua y captura de carbono. Net-Zero expresa un objetivo de diseño, no una certificación.",
+      "status": "CONCEPTO DE INGENIERÍA · [HYPOTHESIS]",
+      "summary": "Demostración conceptual de arquitectura para integrar cómputo, refrigeración, energía y agua. Net-Zero es un objetivo de diseño; los parámetros del dossier son ejemplos sintéticos.",
       "question": "¿Qué integración sería viable en tu ubicación, clima, carga de TI y disponibilidad de energía y agua?",
       "metrics": [
         {
-          "value": "10,461",
-          "label": "Especificaciones reportadas"
+          "value": "10,539",
+          "label": "Registros sintéticos declarados en el export"
         },
         {
           "value": "1.04",
-          "label": "PUE declarado en el informe"
+          "label": "PUE sintético seleccionado"
         },
         {
-          "value": "96.2%",
-          "label": "Recirculación de agua declarada"
+          "value": "88.5%",
+          "label": "Recuperación de calor fijada en el generador"
+        },
+        {
+          "value": "95.1–99.3%",
+          "label": "Recirculación de ejemplo en las 10 filas"
+        },
+        {
+          "value": "80–200 kW",
+          "label": "Etiquetas de capacidad de rack del ejemplo"
         }
       ],
-      "evidence": "El informe declara 10,461 especificaciones termodinámicas, PUE 1.04 y recirculación de agua del 96.2%. No se adjuntan el balance energético, el límite de sistema, el perfil anual de carga o el balance hídrico. PUE no acredita neutralidad de carbono; tampoco se presenta una instalación construida o certificada.",
+      "evidence": "El método inspeccionado selecciona capacidades de rack entre cuatro valores y asigna PUE y recirculación de agua mediante rangos aleatorios. La recuperación de calor se fija en 88.5% y el retorno de inversión en una constante; no se calcula aquí un balance termodinámico ni un proyecto constructivo. El JSON adjunto es una demostración de arquitectura, no evidencia de una instalación Net-Zero certificada. El 96.2% del informe previo no describe de forma única la muestra exportada.",
       "requirements": [
         "Balances de energía y agua, límites del sistema y condiciones de cálculo",
         "Carga de TI, clima, refrigeración y comportamiento anual y a carga parcial",
         "Inventario de emisiones, suministro eléctrico y verificación de captura de carbono",
         "Planos, normativa local, seguridad e ingeniería de detalle revisada"
       ],
-      "scope": "Paquete de transferencia tecnológica propuesto para desarrolladores y operadores de centros de datos. Contenido del blueprint, derechos, adaptación local e ingeniería se definen en contrato; no sustituye proyecto constructivo aprobado.",
+      "scope": "Concepto de arquitectura y propuesta de trabajo para desarrollar un blueprint. Los balances, planos, adaptación local, validación y derechos deberán acordarse y ejecutarse antes de una transferencia técnica operativa.",
       "price": "USD 38,000 / paquete",
-      "priceNote": "Precio de referencia facilitado por Sagar Labs. Alcance, impuestos y condiciones de transferencia por confirmar."
+      "priceNote": "Referencia comercial propuesta para un eventual paquete de desarrollo. Alcance y contrato por definir; no acredita ingeniería constructiva lista para ejecutar.",
+      "dataNotice": "[ESTIMATED] Datos sintéticos del generador. No son resultados de entrenamiento, ensayos o una instalación real.",
+      "sourceNote": "Dossier JSON facilitado por Sagar Labs, con 10,539 registros declarados en el export y una muestra incluida de 10 filas. Se revisó en modo de solo lectura la base local y se inspeccionó el generador. Los conteos reflejan registros procedurales, no validaciones independientes."
     },
     "en": {
       "title": "Net-Zero AI Datacenter Architecture",
       "category": "Blueprint · AI infrastructure",
-      "status": "BLUEPRINT IN DEVELOPMENT",
-      "summary": "A proposed architecture to study cooling, energy, water recirculation and carbon capture together. Net-Zero describes a design objective, not certification.",
+      "status": "ENGINEERING CONCEPT · [HYPOTHESIS]",
+      "summary": "A conceptual architecture demonstration connecting compute, cooling, energy and water. Net-Zero is a design objective; dossier parameters are synthetic examples.",
       "question": "Which integration is feasible for your site, climate, IT load and available power and water?",
       "metrics": [
         {
-          "value": "10,461",
-          "label": "Reported specifications"
+          "value": "10,539",
+          "label": "Synthetic records reported in the export"
         },
         {
           "value": "1.04",
-          "label": "PUE claimed in the report"
+          "label": "Selected synthetic PUE"
         },
         {
-          "value": "96.2%",
-          "label": "Reported water recirculation"
+          "value": "88.5%",
+          "label": "Heat recovery fixed in the generator"
+        },
+        {
+          "value": "95.1–99.3%",
+          "label": "Example recirculation in the 10 rows"
+        },
+        {
+          "value": "80–200 kW",
+          "label": "Example rack-capacity labels"
         }
       ],
-      "evidence": "The report claims 10,461 thermodynamic specifications, PUE 1.04 and 96.2% water recirculation. Energy balances, system boundaries, annual load profile and water balances are not attached. PUE does not establish carbon neutrality, and no built or certified installation is presented.",
+      "evidence": "The inspected method selects rack capacity from four values and assigns PUE and water recirculation from random ranges. Heat recovery is fixed at 88.5% and payback is a constant; no thermodynamic balance or construction design is calculated here. The attached JSON is an architecture demonstration, not evidence of a certified Net-Zero installation. The earlier report’s 96.2% does not uniquely describe the exported sample.",
       "requirements": [
         "Energy/water balances, system boundaries and calculation conditions",
         "IT load, climate, cooling and annual/partial-load performance",
         "Emissions inventory, power supply and carbon-capture verification",
         "Drawings, local codes, safety and reviewed detailed engineering"
       ],
-      "scope": "Proposed technology transfer package for data center developers and operators. Blueprint contents, rights, local adaptation and engineering are agreed by contract; this does not replace an approved construction design.",
+      "scope": "Architecture concept and proposed work to develop a blueprint. Balances, drawings, local adaptation, validation and rights must be agreed and completed before an operational technical transfer.",
       "price": "USD 38,000 / package",
-      "priceNote": "Reference price supplied by Sagar Labs. Scope, taxes and transfer terms remain to be confirmed."
-    }
+      "priceNote": "Proposed commercial reference for a future development package. Scope and contract remain to be defined; this is not construction-ready engineering.",
+      "dataNotice": "[ESTIMATED] Synthetic generator data. Not training results, test measurements or an operating installation.",
+      "sourceNote": "JSON dossier supplied by Sagar Labs, reporting 10,539 export records with a 10-row sample included. The local database was reviewed read-only and the generator inspected. Counts represent procedural records, not independent validations."
+    },
+    "dossier": "/assets/dossiers/net-zero-ai-datacenter.json",
+    "showcase": "/assets/sl005-sl006-showcase.png"
   }
 ];
 export const ui={
