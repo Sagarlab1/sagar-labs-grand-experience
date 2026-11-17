@@ -6,7 +6,7 @@ Sitio ES/EN con CyberCat, inteligencia de infraestructura y catálogo de investi
 
 Node.js 20 o posterior. Sin dependencias externas. Ejecutar `npm run dev` y abrir http://127.0.0.1:4173/es/.
 
-`npm test` compila 34 páginas y ejecuta 16 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
+`npm test` compila 34 páginas y ejecuta 17 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
 
 ## Despliegue
 
@@ -47,3 +47,7 @@ SL/007, SL/008 y SL/009 añaden conceptos de batería Na-S/MXene, imán Fe-Ni y 
 ## Revisión del checkpoint — 17 de noviembre de 2026
 
 La versión actual de Titan carga pesos persistentes. La revisión comprobó dos entradas, tres procesos CPU por entrada y tres llamadas por proceso con resultados repetibles. El script contiene cuatro ejemplos sintéticos; no se acredita precisión ni validación física. Esto sustituye la observación de falta de repetibilidad de la versión anterior. La oferta Na-S incluye un piloto computacional propuesto con alcance y calendario por confirmar, sin síntesis ni protocolo calibrado.
+
+## Oferta B2B aprobada — 17 de noviembre de 2026
+
+Prefactibilidad USD 2,500, piloto computacional desde USD 15,000 y co-desarrollo por hitos desde USD 45,000: referencias sujetas a alcance, datos, disponibilidad y presupuesto. Portada con resumen y CyberCat con entregables, aceptación y límites ES/EN. Los botones mailto preparan consultas en la aplicación de correo del visitante; no envían automáticamente. Laboratorio, terceros y derechos de PI por acuerdo específico; sin checkout, certificación robótica ni garantía de resultados científicos. La guía de entrevistas permanece interna.
