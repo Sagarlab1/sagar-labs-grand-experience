@@ -6,7 +6,7 @@
     "HYPOTHESIS",
     "ESTIMATED"
   ],
-  "review_date": "2026-11-16",
+  "review_date": "2026-11-17",
   "commercial_reference": {
     "es": "USD 120,000 / propuesta",
     "en": "USD 120,000 / proposal",
@@ -19,52 +19,69 @@
   "metrics": {
     "es": [
       {
-        "value": "PyTorch 2.2.2",
-        "label": "Entorno comprobado en la revisión local"
+        "value": "3 procesos",
+        "label": "Salida repetible con el mismo checkpoint y entrada en CPU"
+      },
+      {
+        "value": "4 ejemplos",
+        "label": "Datos sintéticos presentes en el script de entrenamiento"
       },
       {
         "value": "12 → 64 → 64 → 4",
         "label": "Dimensiones del prototipo inspeccionado"
-      },
-      {
-        "value": "3 llamadas",
-        "label": "Misma entrada; salidas distintas en la prueba de repetibilidad"
       }
     ],
     "en": [
       {
-        "value": "PyTorch 2.2.2",
-        "label": "Environment checked in the local review"
+        "value": "3 processes",
+        "label": "Repeatable output with the same checkpoint and input on CPU"
+      },
+      {
+        "value": "4 examples",
+        "label": "Synthetic data present in the training script"
       },
       {
         "value": "12 → 64 → 64 → 4",
         "label": "Inspected prototype dimensions"
-      },
-      {
-        "value": "3 calls",
-        "label": "Same input; different outputs in the repeatability check"
       }
     ]
   },
   "evidence_review": {
-    "es": "El prototipo implementa capas KAN/B-splines. La revisión no encontró carga de pesos entrenados en la función evaluada; una prueba con la misma entrada produjo salidas diferentes. La confianza reportada no está calibrada y el ahorro de energía del informe no procede de una medición comparativa aportada. Los 99.98%, 1.95 ms y cero alucinación no se presentan como prestaciones verificadas ni como garantía formal.",
-    "en": "The prototype implements KAN/B-spline layers. The evaluated function did not load trained weights; a same-input check produced different outputs. Reported confidence is not calibrated, and the report’s energy savings do not come from a supplied comparative measurement. The 99.98%, 1.95 ms and zero-hallucination figures are not presented as verified performance or a formal guarantee."
+    "es": "La revisión del 17 de noviembre confirma que el prototipo carga titan_weights.pt y usa modo evaluación. Dos entradas comprobadas produjeron resultados iguales en tres procesos CPU separados y tres llamadas por proceso. Esto corrige el problema de repetibilidad observado en la versión anterior. El script de entrenamiento contiene cuatro ejemplos sintéticos, sin evaluación independiente aportada. Repetibilidad no equivale a precisión, calibración o validación física. La confianza sigue siendo una transformación de una salida del modelo, no un residual físico medido. No se acredita ahorro energético ni cero alucinaciones.",
+    "en": "The November 17 review confirms that the prototype loads titan_weights.pt and uses evaluation mode. Two tested inputs produced identical outputs across three separate CPU processes and three calls per process. This corrects the repeatability issue observed in the earlier version. The training script contains four synthetic examples, with no independent evaluation supplied. Repeatability does not establish accuracy, calibration or physical validation. Confidence remains a transformation of a model output, not a measured physical residual. Energy savings and zero hallucinations are not established."
   },
   "requirements": {
     "es": [
-      "Datos, pesos entrenados persistentes, versión y tarea definidos",
-      "Evaluación independiente, calibración y reproducibilidad",
-      "Comparación de precisión, latencia y energía en hardware y cargas equivalentes",
-      "Pruebas explícitas de restricciones físicas y gestión de fallos"
+      "Dataset trazable, descriptores y normalización consistentes",
+      "Evaluación independiente, errores por salida y calibración",
+      "Carga obligatoria del checkpoint: detenerse si falta o falla",
+      "Comparación de precisión, latencia y energía bajo condiciones equivalentes"
     ],
     "en": [
-      "Defined data, persistent trained weights, version and task",
-      "Independent evaluation, calibration and reproducibility",
-      "Matched accuracy, latency and energy comparisons on equivalent hardware and workloads",
-      "Explicit physical-constraint tests and failure handling"
+      "Traceable dataset, consistent descriptors and normalization",
+      "Independent evaluation, per-output errors and calibration",
+      "Mandatory checkpoint loading: stop if it is missing or invalid",
+      "Matched accuracy, latency and energy comparisons"
     ]
   },
   "rights_notice": "No patent filing, grant, exclusivity, freedom to operate or laboratory validation is established by this summary.",
   "robot_protocol_status": "Drafts, where available, were syntax-checked only. Not executed on a robot or validated as material synthesis.",
-  "engine_modified": false
+  "engine_modified": false,
+  "checkpoint_sha256": "86966431e857f35587fc84b82dffdb9180122e623ce2cb003ce1c7990ddeeffe",
+  "repeatability": {
+    "same_process_calls": 3,
+    "separate_cpu_processes": 3,
+    "inputs_tested": 2,
+    "identical_outputs_for_same_input": true,
+    "accuracy_validated": false
+  },
+  "training_data": {
+    "examples": 4,
+    "provenance": "synthetic",
+    "independent_test_set_supplied": false
+  },
+  "proposed_scope": {
+    "es": "Propuesta de evaluación o desarrollo del motor de investigación. Interfaces, modelos, soporte y licencia deben definirse y validarse antes de una transferencia operativa.",
+    "en": "Research-engine evaluation or development proposal. Interfaces, models, support and licensing must be defined and validated before operational transfer."
+  }
 }

@@ -66,5 +66,9 @@
   },
   "rights_notice": "No patent filing, grant, exclusivity, freedom to operate or laboratory validation is established by this summary.",
   "robot_protocol_status": "Drafts, where available, were syntax-checked only. Not executed on a robot or validated as material synthesis.",
-  "engine_modified": false
+  "engine_modified": false,
+  "proposed_scope": {
+    "es": "Piloto computacional propuesto para empresas de almacenamiento estacionario y solar: revisión de datos y descriptores, ejecución reproducible del prototipo cuando resulte aplicable e informe de resultados, límites y plan de validación. Calendario y precio del piloto se acuerdan tras revisar los datos; una ventana de dos semanas es orientativa y debe confirmarse. No incluye síntesis, protocolo calibrado, celda certificada ni garantías de prestaciones. La referencia de licencia corresponde a una propuesta separada.",
+    "en": "Proposed computational pilot for stationary and solar-storage companies: data and descriptor review, reproducible prototype execution where applicable, and a report covering results, limitations and a validation plan. Pilot timing and pricing are agreed after data review; a two-week window is indicative and must be confirmed. Synthesis, a calibrated protocol, a certified cell and performance guarantees are not included. The licensing reference is a separate proposal."
+  }
 }

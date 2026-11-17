@@ -43,3 +43,7 @@ SL/005 y SL/006 son conceptos de ingeniería HYPOTHESIS / ESTIMATED. La revisió
 ## Expansión de investigación: Na-S, Fe-Ni y Titan
 
 SL/007, SL/008 y SL/009 añaden conceptos de batería Na-S/MXene, imán Fe-Ni y motor PI-KAN con visuales originales y resúmenes JSON bilingües. El grafeno SL/002 incorpora los valores reportados con su procedencia sintética. Las referencias comerciales son propuestas sujetas a verificación y contrato. No se publican sellos de validación, garantías de cero alucinaciones ni afirmaciones de patentes concedidas. La revisión del prototipo Titan encontró resultados diferentes en tres llamadas con la misma entrada; no se modificó el motor. Las cuatro líneas de investigación de CyberCat son una agenda propuesta, no resultados obtenidos.
+
+## Revisión del checkpoint — 17 de noviembre de 2026
+
+La versión actual de Titan carga pesos persistentes. La revisión comprobó dos entradas, tres procesos CPU por entrada y tres llamadas por proceso con resultados repetibles. El script contiene cuatro ejemplos sintéticos; no se acredita precisión ni validación física. Esto sustituye la observación de falta de repetibilidad de la versión anterior. La oferta Na-S incluye un piloto computacional propuesto con alcance y calendario por confirmar, sin síntesis ni protocolo calibrado.

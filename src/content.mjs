@@ -471,7 +471,7 @@ export const products=[
         "Balance de masas, incertidumbre y referencia equivalente",
         "Revisión del protocolo Flex y de derechos de propiedad intelectual"
       ],
-      "scope": "Propuesta de investigación y eventual licencia o colaboración. Alcance, entregables, derechos y validación se acuerdan por proyecto; no se ofrece una celda certificada ni una patente acreditada.",
+      "scope": "Piloto computacional propuesto para empresas de almacenamiento estacionario y solar: revisión de datos y descriptores, ejecución reproducible del prototipo cuando resulte aplicable e informe de resultados, límites y plan de validación. Calendario y precio del piloto se acuerdan tras revisar los datos; una ventana de dos semanas es orientativa y debe confirmarse. No incluye síntesis, protocolo calibrado, celda certificada ni garantías de prestaciones. La referencia de licencia corresponde a una propuesta separada.",
       "price": "USD 75,000 / propuesta",
       "priceNote": "Referencia de licenciamiento IP facilitada por Sagar Labs; sujeta a verificación de derechos, alcance y validación. No hay compra directa.",
       "status": "PROPUESTA DE I+D · [HYPOTHESIS]",
@@ -504,7 +504,7 @@ export const products=[
         "Mass balance, uncertainty and matched baseline",
         "Flex protocol review and intellectual-property rights assessment"
       ],
-      "scope": "Research proposal and potential license or collaboration. Scope, deliverables, rights and validation are agreed per project; no certified cell or established patent is offered.",
+      "scope": "Proposed computational pilot for stationary and solar-storage companies: data and descriptor review, reproducible prototype execution where applicable, and a report covering results, limitations and a validation plan. Pilot timing and pricing are agreed after data review; a two-week window is indicative and must be confirmed. Synthesis, a calibrated protocol, a certified cell and performance guarantees are not included. The licensing reference is a separate proposal.",
       "price": "USD 75,000 / proposal",
       "priceNote": "IP licensing reference supplied by Sagar Labs; subject to rights, scope and validation review. No direct purchasing.",
       "status": "R&D PROPOSAL · [HYPOTHESIS]",
@@ -602,31 +602,31 @@ export const products=[
       "question": "¿Puede un modelo entrenado y evaluado de forma independiente resolver una tarea física concreta con incertidumbre bien definida?",
       "metrics": [
         {
-          "value": "PyTorch 2.2.2",
-          "label": "Entorno comprobado en la revisión local"
+          "value": "3 procesos",
+          "label": "Salida repetible con el mismo checkpoint y entrada en CPU"
+        },
+        {
+          "value": "4 ejemplos",
+          "label": "Datos sintéticos presentes en el script de entrenamiento"
         },
         {
           "value": "12 → 64 → 64 → 4",
           "label": "Dimensiones del prototipo inspeccionado"
-        },
-        {
-          "value": "3 llamadas",
-          "label": "Misma entrada; salidas distintas en la prueba de repetibilidad"
         }
       ],
-      "evidence": "El prototipo implementa capas KAN/B-splines. La revisión no encontró carga de pesos entrenados en la función evaluada; una prueba con la misma entrada produjo salidas diferentes. La confianza reportada no está calibrada y el ahorro de energía del informe no procede de una medición comparativa aportada. Los 99.98%, 1.95 ms y cero alucinación no se presentan como prestaciones verificadas ni como garantía formal.",
+      "evidence": "La revisión del 17 de noviembre confirma que el prototipo carga titan_weights.pt y usa modo evaluación. Dos entradas comprobadas produjeron resultados iguales en tres procesos CPU separados y tres llamadas por proceso. Esto corrige el problema de repetibilidad observado en la versión anterior. El script de entrenamiento contiene cuatro ejemplos sintéticos, sin evaluación independiente aportada. Repetibilidad no equivale a precisión, calibración o validación física. La confianza sigue siendo una transformación de una salida del modelo, no un residual físico medido. No se acredita ahorro energético ni cero alucinaciones.",
       "requirements": [
-        "Datos, pesos entrenados persistentes, versión y tarea definidos",
-        "Evaluación independiente, calibración y reproducibilidad",
-        "Comparación de precisión, latencia y energía en hardware y cargas equivalentes",
-        "Pruebas explícitas de restricciones físicas y gestión de fallos"
+        "Dataset trazable, descriptores y normalización consistentes",
+        "Evaluación independiente, errores por salida y calibración",
+        "Carga obligatoria del checkpoint: detenerse si falta o falla",
+        "Comparación de precisión, latencia y energía bajo condiciones equivalentes"
       ],
       "scope": "Propuesta de evaluación o desarrollo del motor de investigación. Interfaces, modelos, soporte y licencia deben definirse y validarse antes de una transferencia operativa.",
       "price": "USD 120,000 / propuesta",
       "priceNote": "Referencia de licencia de motor facilitada por Sagar Labs. No corresponde a un motor certificado ni a una garantía de rendimiento.",
       "status": "PROPUESTA DE I+D · [HYPOTHESIS]",
       "dataNotice": "[HYPOTHESIS] Prototipo inspeccionado. Las cifras comerciales del informe no son benchmarks validados.",
-      "sourceNote": "Documento facilitado por Sagar Labs y revisión local del código del generador el 16 de noviembre de 2026. Los valores óptimos son etiquetas de software, no certificaciones."
+      "sourceNote": "Código, checkpoint identificado por SHA-256 y prueba local de inferencia revisados el 17 de noviembre de 2026. Se comprobó repetibilidad local; no generalización ni validez de propiedades materiales."
     },
     "en": {
       "title": "Titan PI-KAN Research Engine",
@@ -635,34 +635,34 @@ export const products=[
       "question": "Can an independently trained and evaluated model solve a specific physical task with well-defined uncertainty?",
       "metrics": [
         {
-          "value": "PyTorch 2.2.2",
-          "label": "Environment checked in the local review"
+          "value": "3 processes",
+          "label": "Repeatable output with the same checkpoint and input on CPU"
+        },
+        {
+          "value": "4 examples",
+          "label": "Synthetic data present in the training script"
         },
         {
           "value": "12 → 64 → 64 → 4",
           "label": "Inspected prototype dimensions"
-        },
-        {
-          "value": "3 calls",
-          "label": "Same input; different outputs in the repeatability check"
         }
       ],
-      "evidence": "The prototype implements KAN/B-spline layers. The evaluated function did not load trained weights; a same-input check produced different outputs. Reported confidence is not calibrated, and the report’s energy savings do not come from a supplied comparative measurement. The 99.98%, 1.95 ms and zero-hallucination figures are not presented as verified performance or a formal guarantee.",
+      "evidence": "The November 17 review confirms that the prototype loads titan_weights.pt and uses evaluation mode. Two tested inputs produced identical outputs across three separate CPU processes and three calls per process. This corrects the repeatability issue observed in the earlier version. The training script contains four synthetic examples, with no independent evaluation supplied. Repeatability does not establish accuracy, calibration or physical validation. Confidence remains a transformation of a model output, not a measured physical residual. Energy savings and zero hallucinations are not established.",
       "requirements": [
-        "Defined data, persistent trained weights, version and task",
-        "Independent evaluation, calibration and reproducibility",
-        "Matched accuracy, latency and energy comparisons on equivalent hardware and workloads",
-        "Explicit physical-constraint tests and failure handling"
+        "Traceable dataset, consistent descriptors and normalization",
+        "Independent evaluation, per-output errors and calibration",
+        "Mandatory checkpoint loading: stop if it is missing or invalid",
+        "Matched accuracy, latency and energy comparisons"
       ],
       "scope": "Research-engine evaluation or development proposal. Interfaces, models, support and licensing must be defined and validated before operational transfer.",
       "price": "USD 120,000 / proposal",
       "priceNote": "Engine licensing reference supplied by Sagar Labs. Not a certified engine or performance guarantee.",
       "status": "R&D PROPOSAL · [HYPOTHESIS]",
       "dataNotice": "[HYPOTHESIS] Inspected prototype. Reported commercial figures are not validated benchmarks.",
-      "sourceNote": "Document supplied by Sagar Labs and local generator-code review on November 16, 2026. Optimal values are software labels, not certifications."
+      "sourceNote": "Code, SHA-256-identified checkpoint and local inference checks reviewed on November 17, 2026. Local repeatability was checked; generalization and material properties were not validated."
     },
     "dossier": "/assets/dossiers/titan-pikan-engine.json",
-    "reportDate": "2026-11-16"
+    "reportDate": "2026-11-17"
   }
 ];
 export const ui={
