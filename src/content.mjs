@@ -79,7 +79,7 @@ export const products=[
       "category": "Gestión térmica para computación",
       "summary": "Exploración de grafeno funcionalizado con boro para estudiar transferencia de calor en interfaces de computación de alta densidad.",
       "question": "¿Puede una interfaz propuesta mejorar el comportamiento térmico bajo condiciones de contacto y carga realistas?",
-      "evidence": "La actualización reporta 3,344 simulaciones y una resistencia térmica de contacto de 0.0074 K·cm²/W. Falta revisar las condiciones de simulación, la geometría de interfaz y el ensayo de integración. No se presenta como capacidad demostrada para refrigerar una GPU a más de 1,000 W/cm².",
+      "evidence": "El candidato Graphene-B-Doped-1L tiene una fila con 2,018.3 W/m·K. El método usa una base, factores por dopante y ruido aleatorio, y deriva la resistencia de contacto con una fórmula. No ejecuta en ese tramo una simulación ASE/DFT ni demuestra una interfaz integrada. La aplicación del registro dice <1000W/cm²; no respalda la afirmación de refrigeración demostrada por encima de 1,000 W/cm².",
       "requirements": [
         "Definición del material, espesor y método de integración",
         "Método térmico, dirección de medición y condiciones de contacto",
@@ -88,25 +88,26 @@ export const products=[
       "scope": "Paquete de investigación e ingeniería propuesto; integración, validación y derechos se definirían por proyecto.",
       "metrics": [
         {
-          "value": "3,344",
-          "label": "Simulaciones reportadas"
-        },
-        {
-          "value": "2,017 W/m·K",
-          "label": "Conductividad declarada"
+          "value": "2,018.3 W/m·K",
+          "label": "Conductividad generada en el ejemplo"
         },
         {
           "value": "0.0074 K·cm²/W",
-          "label": "Resistencia de contacto declarada"
+          "label": "Resistencia derivada de una fórmula"
         }
-      ]
+      ],
+      "status": "PROPUESTA DE I+D · [HYPOTHESIS]",
+      "dataNotice": "[ESTIMATED] Parámetros sintéticos del generador local. No son mediciones ni una validación de prestaciones.",
+      "sourceNote": "Documento facilitado por Sagar Labs y revisión local del código del generador el 16 de noviembre de 2026. Los valores óptimos son etiquetas de software, no certificaciones.",
+      "price": "USD 45,000 / propuesta",
+      "priceNote": "Referencia de licencia IP facilitada por Sagar Labs. No acredita integración Direct-to-Die o derechos disponibles."
     },
     "en": {
       "title": "Graphene thermal interface",
       "category": "Thermal management for computing",
       "summary": "Exploring boron-functionalized graphene to study heat transfer in high-density computing interfaces.",
       "question": "Could a proposed interface improve thermal behavior under realistic contact and load conditions?",
-      "evidence": "The update reports 3,344 simulations and thermal contact resistance of 0.0074 K·cm²/W. Simulation conditions, interface geometry and integration tests remain to be reviewed. This is not presented as demonstrated cooling capability above 1,000 W/cm².",
+      "evidence": "The Graphene-B-Doped-1L candidate has a row reporting 2,018.3 W/m·K. Its method uses a baseline, dopant factors and random noise, and derives contact resistance from a formula. This code section does not run ASE/DFT or demonstrate an integrated interface. The record’s application says <1000W/cm²; it does not support demonstrated cooling above 1,000 W/cm².",
       "requirements": [
         "Material definition, thickness and integration method",
         "Thermal method, measurement direction and contact conditions",
@@ -115,20 +116,22 @@ export const products=[
       "scope": "Proposed research and engineering package; integration, validation and rights would be defined per project.",
       "metrics": [
         {
-          "value": "3,344",
-          "label": "Reported simulations"
-        },
-        {
-          "value": "2,017 W/m·K",
-          "label": "Reported conductivity"
+          "value": "2,018.3 W/m·K",
+          "label": "Generated example conductivity"
         },
         {
           "value": "0.0074 K·cm²/W",
-          "label": "Reported contact resistance"
+          "label": "Resistance derived from a formula"
         }
-      ]
+      ],
+      "status": "R&D PROPOSAL · [HYPOTHESIS]",
+      "dataNotice": "[ESTIMATED] Synthetic local-generator parameters. Not measurements or performance validation.",
+      "sourceNote": "Document supplied by Sagar Labs and local generator-code review on November 16, 2026. Optimal values are software labels, not certifications.",
+      "price": "USD 45,000 / proposal",
+      "priceNote": "IP license reference supplied by Sagar Labs. Does not establish Direct-to-Die integration or available rights."
     },
-    "reportDate": "2026-11-16"
+    "reportDate": "2026-11-16",
+    "dossier": "/assets/dossiers/thermal-graphene-review.json"
   },
   {
     "slug": "nanoporous-mof",
@@ -435,9 +438,234 @@ export const products=[
     },
     "dossier": "/assets/dossiers/net-zero-ai-datacenter.json",
     "showcase": "/assets/sl005-sl006-showcase.png"
+  },
+  {
+    "slug": "nas-mxene-battery",
+    "formula": "Na–S / MXene",
+    "filter": "energy",
+    "render": "/assets/nas-mxene-battery.svg",
+    "staticVisual": true,
+    "es": {
+      "title": "Batería Na-S con MXene",
+      "category": "Baterías · Química sodio-azufre",
+      "summary": "Concepto de batería de sodio-azufre con matriz MXene para estudiar confinamiento de polisulfuros y almacenamiento estacionario. Candidato generado, pendiente de caracterización y ensayos.",
+      "question": "¿Qué capacidad, estabilidad y coste puede demostrar una celda completa bajo un protocolo reproducible?",
+      "metrics": [
+        {
+          "value": "503.4 Wh/kg",
+          "label": "Energía específica generada; sin ensayo de celda"
+        },
+        {
+          "value": "95.4%",
+          "label": "Retención generada; no son 500 ciclos medidos"
+        },
+        {
+          "value": "USD 32.7/kWh",
+          "label": "Coste sintético; campo del generador referido a pack"
+        }
+      ],
+      "evidence": "El candidato NaS-MXene-Ti3C2Tx-Porous-S-85.7% existe en SQLite. Su generador combina una energía base con carga de azufre y perturbación aleatoria; retención y coste se asignan con rangos aleatorios. Existe un borrador robótico de pipeteo y un borrador documental de patente. No se aportan ensayo electroquímico, caracterización de fase, validación de seguridad o comprobante de presentación de patente.",
+      "requirements": [
+        "Definir composición, electrolito, masa activa y masa de la celda completa",
+        "Síntesis, caracterización, ciclos y condiciones de medición reproducibles",
+        "Balance de masas, incertidumbre y referencia equivalente",
+        "Revisión del protocolo Flex y de derechos de propiedad intelectual"
+      ],
+      "scope": "Propuesta de investigación y eventual licencia o colaboración. Alcance, entregables, derechos y validación se acuerdan por proyecto; no se ofrece una celda certificada ni una patente acreditada.",
+      "price": "USD 75,000 / propuesta",
+      "priceNote": "Referencia de licenciamiento IP facilitada por Sagar Labs; sujeta a verificación de derechos, alcance y validación. No hay compra directa.",
+      "status": "PROPUESTA DE I+D · [HYPOTHESIS]",
+      "dataNotice": "[ESTIMATED] Parámetros sintéticos del generador local. No son mediciones ni una validación de prestaciones.",
+      "sourceNote": "Documento facilitado por Sagar Labs y revisión local del código del generador el 16 de noviembre de 2026. Los valores óptimos son etiquetas de software, no certificaciones."
+    },
+    "en": {
+      "title": "MXene-hosted Na-S battery",
+      "category": "Batteries · Sodium-sulfur chemistry",
+      "summary": "A sodium-sulfur battery concept using an MXene host to study polysulfide confinement and stationary storage. A generated candidate awaiting characterization and testing.",
+      "question": "What capacity, stability and cost can a complete cell demonstrate under a reproducible protocol?",
+      "metrics": [
+        {
+          "value": "503.4 Wh/kg",
+          "label": "Generated specific energy; no cell test"
+        },
+        {
+          "value": "95.4%",
+          "label": "Generated retention; not 500 measured cycles"
+        },
+        {
+          "value": "USD 32.7/kWh",
+          "label": "Synthetic cost; generator field refers to a pack"
+        }
+      ],
+      "evidence": "The NaS-MXene-Ti3C2Tx-Porous-S-85.7% candidate exists in SQLite. Its generator combines baseline energy, sulfur loading and a random perturbation; retention and cost are assigned from random ranges. A liquid-handling script draft and a patent-document draft exist. Electrochemical testing, phase characterization, safety validation and a patent filing receipt have not been supplied.",
+      "requirements": [
+        "Define composition, electrolyte, active mass and complete-cell mass",
+        "Reproducible synthesis, characterization, cycling and measurement conditions",
+        "Mass balance, uncertainty and matched baseline",
+        "Flex protocol review and intellectual-property rights assessment"
+      ],
+      "scope": "Research proposal and potential license or collaboration. Scope, deliverables, rights and validation are agreed per project; no certified cell or established patent is offered.",
+      "price": "USD 75,000 / proposal",
+      "priceNote": "IP licensing reference supplied by Sagar Labs; subject to rights, scope and validation review. No direct purchasing.",
+      "status": "R&D PROPOSAL · [HYPOTHESIS]",
+      "dataNotice": "[ESTIMATED] Synthetic local-generator parameters. Not measurements or performance validation.",
+      "sourceNote": "Document supplied by Sagar Labs and local generator-code review on November 16, 2026. Optimal values are software labels, not certifications."
+    },
+    "dossier": "/assets/dossiers/nas-mxene-battery.json",
+    "reportDate": "2026-11-16"
+  },
+  {
+    "slug": "tetrataenite-magnet",
+    "formula": "FeNi / L1₀",
+    "filter": "industry",
+    "render": "/assets/tetrataenite-magnet.svg",
+    "staticVisual": true,
+    "es": {
+      "title": "Imán Fe-Ni sin tierras raras",
+      "category": "Materiales magnéticos · Tetrataenita",
+      "summary": "Concepto de aleación Fe-Ni dopada con fósforo para investigar materiales magnéticos sin tierras raras. La fase L1₀ es una estructura objetivo, todavía no acreditada mediante caracterización.",
+      "question": "¿Puede fabricarse la fase propuesta y demostrar coercitividad, estabilidad y propiedades útiles a escala relevante?",
+      "metrics": [
+        {
+          "value": "39.5 MGOe",
+          "label": "BHmax de ejemplo sintético"
+        },
+        {
+          "value": "554 °C",
+          "label": "Temperatura de Curie generada"
+        },
+        {
+          "value": "83.6%",
+          "label": "Ahorro generado; sin comparación de costes validada"
+        }
+      ],
+      "evidence": "La fila Tetrataenite-FeNi-P-5% contiene estos valores, pero proceden de rangos sintéticos del generador. No se aportan una ejecución DFT trazable, caracterización de la fase o pruebas magnéticas independientes. Existen borradores técnicos y documentales pendientes de revisión específica; no acreditan una patente registrada ni equivalencia industrial con NdFeB N40.",
+      "requirements": [
+        "Caracterización de ordenamiento L1₀, composición y microestructura",
+        "Curvas de histéresis, coercitividad, remanencia y BHmax con condiciones",
+        "Estabilidad térmica, fabricación y comparación equivalente",
+        "Corregir la documentación técnica y revisar inventores y derechos"
+      ],
+      "scope": "Propuesta de investigación en magnetismo y eventual transferencia de tecnología, pendiente de validación y definición contractual. Los archivos existentes son borradores para revisión.",
+      "price": "USD 95,000 / propuesta",
+      "priceNote": "Referencia de licenciamiento IP facilitada por Sagar Labs. Derechos, prestaciones y alcance pendientes de verificación.",
+      "status": "PROPUESTA DE I+D · [HYPOTHESIS]",
+      "dataNotice": "[ESTIMATED] Parámetros sintéticos del generador local. No son mediciones ni una validación de prestaciones.",
+      "sourceNote": "Documento facilitado por Sagar Labs y revisión local del código del generador el 16 de noviembre de 2026. Los valores óptimos son etiquetas de software, no certificaciones."
+    },
+    "en": {
+      "title": "Rare-earth-free Fe-Ni magnet",
+      "category": "Magnetic materials · Tetrataenite",
+      "summary": "A phosphorus-doped Fe-Ni alloy concept for researching rare-earth-free magnets. L1₀ is a target structure, not yet established by characterization.",
+      "question": "Can the proposed phase be manufactured and demonstrate useful coercivity, stability and properties at a relevant scale?",
+      "metrics": [
+        {
+          "value": "39.5 MGOe",
+          "label": "Synthetic example BHmax"
+        },
+        {
+          "value": "554 °C",
+          "label": "Generated Curie temperature"
+        },
+        {
+          "value": "83.6%",
+          "label": "Generated savings; no validated cost comparison"
+        }
+      ],
+      "evidence": "The Tetrataenite-FeNi-P-5% record contains these values, but they come from synthetic generator ranges. A traceable DFT run, phase characterization and independent magnetic tests have not been supplied. Technical and document drafts require specific review; they do not establish a filed patent or industrial NdFeB N40 equivalence.",
+      "requirements": [
+        "L1₀ ordering, composition and microstructure characterization",
+        "Hysteresis, coercivity, remanence and BHmax with measurement conditions",
+        "Thermal stability, manufacturing and matched comparisons",
+        "Correct technical documentation and review inventorship and rights"
+      ],
+      "scope": "Magnetism research proposal and potential technology transfer, subject to validation and contract definition. Existing files are drafts for review.",
+      "price": "USD 95,000 / proposal",
+      "priceNote": "IP licensing reference supplied by Sagar Labs. Rights, performance and scope require verification.",
+      "status": "R&D PROPOSAL · [HYPOTHESIS]",
+      "dataNotice": "[ESTIMATED] Synthetic local-generator parameters. Not measurements or performance validation.",
+      "sourceNote": "Document supplied by Sagar Labs and local generator-code review on November 16, 2026. Optimal values are software labels, not certifications."
+    },
+    "dossier": "/assets/dossiers/tetrataenite-magnet.json",
+    "reportDate": "2026-11-16"
+  },
+  {
+    "slug": "titan-pikan-engine",
+    "formula": "PI-KAN / 12→4",
+    "filter": "software",
+    "render": "/assets/titan-pikan-engine.svg",
+    "staticVisual": true,
+    "es": {
+      "title": "Titan PI-KAN Research Engine",
+      "category": "Software · Prototipo de redes KAN",
+      "summary": "Prototipo local de PyTorch con capas KAN y bases B-spline para explorar modelos de evaluación numérica. Se presenta como software de investigación en desarrollo.",
+      "question": "¿Puede un modelo entrenado y evaluado de forma independiente resolver una tarea física concreta con incertidumbre bien definida?",
+      "metrics": [
+        {
+          "value": "PyTorch 2.2.2",
+          "label": "Entorno comprobado en la revisión local"
+        },
+        {
+          "value": "12 → 64 → 64 → 4",
+          "label": "Dimensiones del prototipo inspeccionado"
+        },
+        {
+          "value": "3 llamadas",
+          "label": "Misma entrada; salidas distintas en la prueba de repetibilidad"
+        }
+      ],
+      "evidence": "El prototipo implementa capas KAN/B-splines. La revisión no encontró carga de pesos entrenados en la función evaluada; una prueba con la misma entrada produjo salidas diferentes. La confianza reportada no está calibrada y el ahorro de energía del informe no procede de una medición comparativa aportada. Los 99.98%, 1.95 ms y cero alucinación no se presentan como prestaciones verificadas ni como garantía formal.",
+      "requirements": [
+        "Datos, pesos entrenados persistentes, versión y tarea definidos",
+        "Evaluación independiente, calibración y reproducibilidad",
+        "Comparación de precisión, latencia y energía en hardware y cargas equivalentes",
+        "Pruebas explícitas de restricciones físicas y gestión de fallos"
+      ],
+      "scope": "Propuesta de evaluación o desarrollo del motor de investigación. Interfaces, modelos, soporte y licencia deben definirse y validarse antes de una transferencia operativa.",
+      "price": "USD 120,000 / propuesta",
+      "priceNote": "Referencia de licencia de motor facilitada por Sagar Labs. No corresponde a un motor certificado ni a una garantía de rendimiento.",
+      "status": "PROPUESTA DE I+D · [HYPOTHESIS]",
+      "dataNotice": "[HYPOTHESIS] Prototipo inspeccionado. Las cifras comerciales del informe no son benchmarks validados.",
+      "sourceNote": "Documento facilitado por Sagar Labs y revisión local del código del generador el 16 de noviembre de 2026. Los valores óptimos son etiquetas de software, no certificaciones."
+    },
+    "en": {
+      "title": "Titan PI-KAN Research Engine",
+      "category": "Software · KAN network prototype",
+      "summary": "A local PyTorch prototype with KAN layers and B-spline bases for exploring numerical evaluation models. Presented as research software in development.",
+      "question": "Can an independently trained and evaluated model solve a specific physical task with well-defined uncertainty?",
+      "metrics": [
+        {
+          "value": "PyTorch 2.2.2",
+          "label": "Environment checked in the local review"
+        },
+        {
+          "value": "12 → 64 → 64 → 4",
+          "label": "Inspected prototype dimensions"
+        },
+        {
+          "value": "3 calls",
+          "label": "Same input; different outputs in the repeatability check"
+        }
+      ],
+      "evidence": "The prototype implements KAN/B-spline layers. The evaluated function did not load trained weights; a same-input check produced different outputs. Reported confidence is not calibrated, and the report’s energy savings do not come from a supplied comparative measurement. The 99.98%, 1.95 ms and zero-hallucination figures are not presented as verified performance or a formal guarantee.",
+      "requirements": [
+        "Defined data, persistent trained weights, version and task",
+        "Independent evaluation, calibration and reproducibility",
+        "Matched accuracy, latency and energy comparisons on equivalent hardware and workloads",
+        "Explicit physical-constraint tests and failure handling"
+      ],
+      "scope": "Research-engine evaluation or development proposal. Interfaces, models, support and licensing must be defined and validated before operational transfer.",
+      "price": "USD 120,000 / proposal",
+      "priceNote": "Engine licensing reference supplied by Sagar Labs. Not a certified engine or performance guarantee.",
+      "status": "R&D PROPOSAL · [HYPOTHESIS]",
+      "dataNotice": "[HYPOTHESIS] Inspected prototype. Reported commercial figures are not validated benchmarks.",
+      "sourceNote": "Document supplied by Sagar Labs and local generator-code review on November 16, 2026. Optimal values are software labels, not certifications."
+    },
+    "dossier": "/assets/dossiers/titan-pikan-engine.json",
+    "reportDate": "2026-11-16"
   }
 ];
 export const ui={
-es:{nav:['CyberCat I+D','Infraestructura','Investigación','Cómo trabajamos'],home:'Inicio',language:'Idioma',menu:'Abrir menú',closeMenu:'Cerrar menú',skip:'Saltar al contenido',evaluate:'Evaluar un proyecto',sample:'Ver muestra de informe',contact:'Contacto',read:'Ver alcance',explore:'Explorar investigación',status:'PRODUCTO EN EVOLUCIÓN',pilot:'Piloto de investigación',dedicated:'Programa dedicado',under:'Bajo propuesta',question:'¿Qué decisión necesitas tomar?',email:'Correo profesional',name:'Nombre',company:'Empresa o equipo',type:'Tipo de proyecto',message:'Describe tu pregunta y los datos disponibles',privacy:'He leído cómo se utilizarán mis datos para responder esta consulta.',submit:'Enviar consulta',sending:'Enviando…',success:'Consulta recibida',reference:'Referencia de tu solicitud',saved:'Tu consulta se ha registrado. Conserva esta referencia para el seguimiento.',local:'Vista previa: la solicitud quedó guardada solo en este equipo. No se envió por correo ni al equipo de Sagar Labs.',failure:'No pudimos registrar la consulta. Inténtalo de nuevo o escribe a',wait:'Hay demasiados intentos. Espera una hora antes de volver a enviar.',required:'Completa los campos indicados y acepta el uso de datos.',retry:'Volver a intentar',sampleLabel:'MUESTRA ILUSTRATIVA · NO ES UN CASO DE CLIENTE',sampleShort:'Muestra ilustrativa',evidence:'Evidencia y límites',scope:'Alcance propuesto',requirements:'Qué falta para evaluar la propuesta',back:'Volver a investigación',all:'Todos',energy:'Energía',compute:'Computación',environment:'Ambiente y agua',software:'Software',architecture:'Arquitectura',researchStatus:'PROPUESTA EN INVESTIGACIÓN',noResults:'No hay resultados para este filtro.',motionPause:'Pausar animaciones',motionPlay:'Reanudar animaciones',search:'Buscar en Sagar Labs',searchPlaceholder:'Busca un servicio o una investigación…',searchEmpty:'Sin resultados. Prueba CyberCat, baterías o agua.',searchHelp:'↑ ↓ navegar · Enter abrir · Esc cerrar',close:'Cerrar',footer:'Empresa constituida en Estados Unidos. Investigación con evidencia y límites explícitos.',rights:'Todos los derechos reservados.',privacyLink:'Privacidad',principles:'Criterios de trabajo',print:'Imprimir o guardar PDF',download:'Descargar muestra',source:'Origen de la información',proposal:'Propuesta facilitada por Sagar Labs; validación documental pendiente.',price:'Alcance y presupuesto tras evaluación',ready:'Revisar un proyecto',contactIntro:'Cuéntanos la pregunta, los datos disponibles y la decisión que buscas apoyar. Primero revisaremos si existe un alcance viable.',metaSuffix:'Sagar Labs',other:'Otra consulta',infrastructure:'Inteligencia de infraestructura',licensing:'Consulta sobre investigación y licencias'},
-en:{nav:['CyberCat R&D','Infrastructure','Research','How we work'],home:'Home',language:'Language',menu:'Open menu',closeMenu:'Close menu',skip:'Skip to content',evaluate:'Evaluate a project',sample:'View sample brief',contact:'Contact',read:'View scope',explore:'Explore research',status:'PRODUCT IN DEVELOPMENT',pilot:'Research pilot',dedicated:'Dedicated program',under:'By proposal',question:'What decision do you need to make?',email:'Work email',name:'Name',company:'Company or team',type:'Project type',message:'Describe your question and available data',privacy:'I have read how my data will be used to respond to this enquiry.',submit:'Send enquiry',sending:'Sending…',success:'Enquiry received',reference:'Your enquiry reference',saved:'Your enquiry has been recorded. Keep this reference for follow-up.',local:'Preview: this enquiry was saved only on this computer. It was not emailed or sent to the Sagar Labs team.',failure:'We could not record your enquiry. Please try again or email',wait:'Too many attempts. Please wait one hour before submitting again.',required:'Complete the indicated fields and accept the data use notice.',retry:'Try again',sampleLabel:'ILLUSTRATIVE SAMPLE · NOT A CLIENT CASE',sampleShort:'Illustrative sample',evidence:'Evidence and limitations',scope:'Proposed scope',requirements:'What is needed to assess this proposal',back:'Back to research',all:'All',energy:'Energy',compute:'Computing',environment:'Environment & water',software:'Software',architecture:'Architecture',researchStatus:'RESEARCH PROPOSAL',noResults:'No results for this filter.',motionPause:'Pause animations',motionPlay:'Resume animations',search:'Search Sagar Labs',searchPlaceholder:'Search for a service or research area…',searchEmpty:'No results. Try CyberCat, batteries or water.',searchHelp:'↑ ↓ navigate · Enter open · Esc close',close:'Close',footer:'A company incorporated in the United States. Research with explicit evidence and limitations.',rights:'All rights reserved.',privacyLink:'Privacy',principles:'Working principles',print:'Print or save PDF',download:'Download sample',source:'Source of information',proposal:'Proposal supplied by Sagar Labs; documentary validation pending.',price:'Scope and budget following assessment',ready:'Review a project',contactIntro:'Tell us your question, available data and the decision you need to support. We will first assess whether there is a feasible scope.',metaSuffix:'Sagar Labs',other:'Other enquiry',infrastructure:'Infrastructure intelligence',licensing:'Research and licensing enquiry'}
+es:{nav:['CyberCat I+D','Infraestructura','Investigación','Cómo trabajamos'],home:'Inicio',language:'Idioma',menu:'Abrir menú',closeMenu:'Cerrar menú',skip:'Saltar al contenido',evaluate:'Evaluar un proyecto',sample:'Ver muestra de informe',contact:'Contacto',read:'Ver alcance',explore:'Explorar investigación',status:'PRODUCTO EN EVOLUCIÓN',pilot:'Piloto de investigación',dedicated:'Programa dedicado',under:'Bajo propuesta',question:'¿Qué decisión necesitas tomar?',email:'Correo profesional',name:'Nombre',company:'Empresa o equipo',type:'Tipo de proyecto',message:'Describe tu pregunta y los datos disponibles',privacy:'He leído cómo se utilizarán mis datos para responder esta consulta.',submit:'Enviar consulta',sending:'Enviando…',success:'Consulta recibida',reference:'Referencia de tu solicitud',saved:'Tu consulta se ha registrado. Conserva esta referencia para el seguimiento.',local:'Vista previa: la solicitud quedó guardada solo en este equipo. No se envió por correo ni al equipo de Sagar Labs.',failure:'No pudimos registrar la consulta. Inténtalo de nuevo o escribe a',wait:'Hay demasiados intentos. Espera una hora antes de volver a enviar.',required:'Completa los campos indicados y acepta el uso de datos.',retry:'Volver a intentar',sampleLabel:'MUESTRA ILUSTRATIVA · NO ES UN CASO DE CLIENTE',sampleShort:'Muestra ilustrativa',evidence:'Evidencia y límites',scope:'Alcance propuesto',requirements:'Qué falta para evaluar la propuesta',back:'Volver a investigación',all:'Todos',energy:'Energía',compute:'Computación',environment:'Ambiente y agua',software:'Software',architecture:'Arquitectura',industry:'Industria',researchStatus:'PROPUESTA EN INVESTIGACIÓN',noResults:'No hay resultados para este filtro.',motionPause:'Pausar animaciones',motionPlay:'Reanudar animaciones',search:'Buscar en Sagar Labs',searchPlaceholder:'Busca un servicio o una investigación…',searchEmpty:'Sin resultados. Prueba CyberCat, baterías o agua.',searchHelp:'↑ ↓ navegar · Enter abrir · Esc cerrar',close:'Cerrar',footer:'Empresa constituida en Estados Unidos. Investigación con evidencia y límites explícitos.',rights:'Todos los derechos reservados.',privacyLink:'Privacidad',principles:'Criterios de trabajo',print:'Imprimir o guardar PDF',download:'Descargar muestra',source:'Origen de la información',proposal:'Propuesta facilitada por Sagar Labs; validación documental pendiente.',price:'Alcance y presupuesto tras evaluación',ready:'Revisar un proyecto',contactIntro:'Cuéntanos la pregunta, los datos disponibles y la decisión que buscas apoyar. Primero revisaremos si existe un alcance viable.',metaSuffix:'Sagar Labs',other:'Otra consulta',infrastructure:'Inteligencia de infraestructura',licensing:'Consulta sobre investigación y licencias'},
+en:{nav:['CyberCat R&D','Infrastructure','Research','How we work'],home:'Home',language:'Language',menu:'Open menu',closeMenu:'Close menu',skip:'Skip to content',evaluate:'Evaluate a project',sample:'View sample brief',contact:'Contact',read:'View scope',explore:'Explore research',status:'PRODUCT IN DEVELOPMENT',pilot:'Research pilot',dedicated:'Dedicated program',under:'By proposal',question:'What decision do you need to make?',email:'Work email',name:'Name',company:'Company or team',type:'Project type',message:'Describe your question and available data',privacy:'I have read how my data will be used to respond to this enquiry.',submit:'Send enquiry',sending:'Sending…',success:'Enquiry received',reference:'Your enquiry reference',saved:'Your enquiry has been recorded. Keep this reference for follow-up.',local:'Preview: this enquiry was saved only on this computer. It was not emailed or sent to the Sagar Labs team.',failure:'We could not record your enquiry. Please try again or email',wait:'Too many attempts. Please wait one hour before submitting again.',required:'Complete the indicated fields and accept the data use notice.',retry:'Try again',sampleLabel:'ILLUSTRATIVE SAMPLE · NOT A CLIENT CASE',sampleShort:'Illustrative sample',evidence:'Evidence and limitations',scope:'Proposed scope',requirements:'What is needed to assess this proposal',back:'Back to research',all:'All',energy:'Energy',compute:'Computing',environment:'Environment & water',software:'Software',architecture:'Architecture',industry:'Industry',researchStatus:'RESEARCH PROPOSAL',noResults:'No results for this filter.',motionPause:'Pause animations',motionPlay:'Resume animations',search:'Search Sagar Labs',searchPlaceholder:'Search for a service or research area…',searchEmpty:'No results. Try CyberCat, batteries or water.',searchHelp:'↑ ↓ navigate · Enter open · Esc close',close:'Close',footer:'A company incorporated in the United States. Research with explicit evidence and limitations.',rights:'All rights reserved.',privacyLink:'Privacy',principles:'Working principles',print:'Print or save PDF',download:'Download sample',source:'Source of information',proposal:'Proposal supplied by Sagar Labs; documentary validation pending.',price:'Scope and budget following assessment',ready:'Review a project',contactIntro:'Tell us your question, available data and the decision you need to support. We will first assess whether there is a feasible scope.',metaSuffix:'Sagar Labs',other:'Other enquiry',infrastructure:'Infrastructure intelligence',licensing:'Research and licensing enquiry'}
 };

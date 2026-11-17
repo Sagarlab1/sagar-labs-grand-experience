@@ -1,0 +1,60 @@
+{
+  "product_code": "SL/002",
+  "title": "Graphene thermal interface",
+  "classification": "synthetic_candidate",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "ESTIMATED"
+  ],
+  "review_date": "2026-11-16",
+  "commercial_reference": {
+    "es": "USD 45,000 / propuesta",
+    "en": "USD 45,000 / proposal",
+    "status": "proposed_subject_to_scope_rights_and_validation"
+  },
+  "summary": {
+    "es": "Exploración de grafeno funcionalizado con boro para estudiar transferencia de calor en interfaces de computación de alta densidad.",
+    "en": "Exploring boron-functionalized graphene to study heat transfer in high-density computing interfaces."
+  },
+  "metrics": {
+    "es": [
+      {
+        "value": "2,018.3 W/m·K",
+        "label": "Conductividad generada en el ejemplo"
+      },
+      {
+        "value": "0.0074 K·cm²/W",
+        "label": "Resistencia derivada de una fórmula"
+      }
+    ],
+    "en": [
+      {
+        "value": "2,018.3 W/m·K",
+        "label": "Generated example conductivity"
+      },
+      {
+        "value": "0.0074 K·cm²/W",
+        "label": "Resistance derived from a formula"
+      }
+    ]
+  },
+  "evidence_review": {
+    "es": "El candidato Graphene-B-Doped-1L tiene una fila con 2,018.3 W/m·K. El método usa una base, factores por dopante y ruido aleatorio, y deriva la resistencia de contacto con una fórmula. No ejecuta en ese tramo una simulación ASE/DFT ni demuestra una interfaz integrada. La aplicación del registro dice <1000W/cm²; no respalda la afirmación de refrigeración demostrada por encima de 1,000 W/cm².",
+    "en": "The Graphene-B-Doped-1L candidate has a row reporting 2,018.3 W/m·K. Its method uses a baseline, dopant factors and random noise, and derives contact resistance from a formula. This code section does not run ASE/DFT or demonstrate an integrated interface. The record’s application says <1000W/cm²; it does not support demonstrated cooling above 1,000 W/cm²."
+  },
+  "requirements": {
+    "es": [
+      "Definición del material, espesor y método de integración",
+      "Método térmico, dirección de medición y condiciones de contacto",
+      "Ensayos de referencia, repetibilidad y límites de operación"
+    ],
+    "en": [
+      "Material definition, thickness and integration method",
+      "Thermal method, measurement direction and contact conditions",
+      "Reference tests, repeatability and operating limits"
+    ]
+  },
+  "rights_notice": "No patent filing, grant, exclusivity, freedom to operate or laboratory validation is established by this summary.",
+  "robot_protocol_status": "Drafts, where available, were syntax-checked only. Not executed on a robot or validated as material synthesis.",
+  "engine_modified": false
+}

@@ -6,7 +6,7 @@ Sitio ES/EN con CyberCat, inteligencia de infraestructura y catálogo de investi
 
 Node.js 20 o posterior. Sin dependencias externas. Ejecutar `npm run dev` y abrir http://127.0.0.1:4173/es/.
 
-`npm test` compila 28 páginas y ejecuta 15 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
+`npm test` compila 34 páginas y ejecuta 16 pruebas de rutas, idiomas, metadatos, enlaces y recepción.
 
 ## Despliegue
 
@@ -28,7 +28,7 @@ Para rollback, volver a asignar ambos dominios al proyecto anterior conservando 
 
 ## Catálogo actualizado
 
-Seis propuestas de investigación y desarrollo, incluyendo Sagar BMS Digital Twin SDK y Net-Zero AI Datacenter Architecture. Versiones ES/EN, visuales SVG originales y esculturas interactivas, datos reportados por el propietario, fichas informativas descargables y referencias comerciales sujetas a alcance. Las cifras del informe del 16 de noviembre de 2026 no se presentan como validación experimental ni como evidencia auditada. No se han adjuntado datos primarios, SDK ejecutable ni planos constructivos.
+Nueve propuestas de investigación y desarrollo, incluyendo Sagar BMS Digital Twin SDK y Net-Zero AI Datacenter Architecture. Versiones ES/EN, visuales SVG originales y esculturas interactivas, datos reportados por el propietario, fichas informativas descargables y referencias comerciales sujetas a alcance. Las cifras del informe del 16 de noviembre de 2026 no se presentan como validación experimental ni como evidencia auditada. No se han adjuntado datos primarios, SDK ejecutable ni planos constructivos.
 
 ## Procedencia de SL/005 y SL/006
 
@@ -39,3 +39,7 @@ El render conjunto de Blender facilitado por Sagar Labs se publica como imagen c
 ## Revisión de los dossiers originales
 
 SL/005 y SL/006 son conceptos de ingeniería HYPOTHESIS / ESTIMATED. La revisión de sus generadores identificó datos sintéticos producidos con selecciones aleatorias y constantes. Los 10,539 registros declarados por cada export no equivalen a modelos entrenados ni a diseños independientemente validados. Cada JSON público conserva el export original, una muestra normalizada y notas de procedencia. El score 99.15 no se presenta como precisión medida. Los valores de PUE, latencia, agua y calor son ejemplos sintéticos. El render conjunto de Blender facilitado por el propietario se incluye sin presentarlo como fotografía de prototipos. Esta revisión se limita a SL/005 y SL/006; no evalúa protocolos de subvenciones o laboratorio.
+
+## Expansión de investigación: Na-S, Fe-Ni y Titan
+
+SL/007, SL/008 y SL/009 añaden conceptos de batería Na-S/MXene, imán Fe-Ni y motor PI-KAN con visuales originales y resúmenes JSON bilingües. El grafeno SL/002 incorpora los valores reportados con su procedencia sintética. Las referencias comerciales son propuestas sujetas a verificación y contrato. No se publican sellos de validación, garantías de cero alucinaciones ni afirmaciones de patentes concedidas. La revisión del prototipo Titan encontró resultados diferentes en tres llamadas con la misma entrada; no se modificó el motor. Las cuatro líneas de investigación de CyberCat son una agenda propuesta, no resultados obtenidos.

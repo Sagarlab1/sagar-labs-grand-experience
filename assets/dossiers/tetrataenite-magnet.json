@@ -1,0 +1,70 @@
+{
+  "product_code": "SL/000",
+  "title": "Rare-earth-free Fe-Ni magnet",
+  "classification": "synthetic_candidate",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "ESTIMATED"
+  ],
+  "review_date": "2026-11-16",
+  "commercial_reference": {
+    "es": "USD 95,000 / propuesta",
+    "en": "USD 95,000 / proposal",
+    "status": "proposed_subject_to_scope_rights_and_validation"
+  },
+  "summary": {
+    "es": "Concepto de aleación Fe-Ni dopada con fósforo para investigar materiales magnéticos sin tierras raras. La fase L1₀ es una estructura objetivo, todavía no acreditada mediante caracterización.",
+    "en": "A phosphorus-doped Fe-Ni alloy concept for researching rare-earth-free magnets. L1₀ is a target structure, not yet established by characterization."
+  },
+  "metrics": {
+    "es": [
+      {
+        "value": "39.5 MGOe",
+        "label": "BHmax de ejemplo sintético"
+      },
+      {
+        "value": "554 °C",
+        "label": "Temperatura de Curie generada"
+      },
+      {
+        "value": "83.6%",
+        "label": "Ahorro generado; sin comparación de costes validada"
+      }
+    ],
+    "en": [
+      {
+        "value": "39.5 MGOe",
+        "label": "Synthetic example BHmax"
+      },
+      {
+        "value": "554 °C",
+        "label": "Generated Curie temperature"
+      },
+      {
+        "value": "83.6%",
+        "label": "Generated savings; no validated cost comparison"
+      }
+    ]
+  },
+  "evidence_review": {
+    "es": "La fila Tetrataenite-FeNi-P-5% contiene estos valores, pero proceden de rangos sintéticos del generador. No se aportan una ejecución DFT trazable, caracterización de la fase o pruebas magnéticas independientes. Existen borradores técnicos y documentales pendientes de revisión específica; no acreditan una patente registrada ni equivalencia industrial con NdFeB N40.",
+    "en": "The Tetrataenite-FeNi-P-5% record contains these values, but they come from synthetic generator ranges. A traceable DFT run, phase characterization and independent magnetic tests have not been supplied. Technical and document drafts require specific review; they do not establish a filed patent or industrial NdFeB N40 equivalence."
+  },
+  "requirements": {
+    "es": [
+      "Caracterización de ordenamiento L1₀, composición y microestructura",
+      "Curvas de histéresis, coercitividad, remanencia y BHmax con condiciones",
+      "Estabilidad térmica, fabricación y comparación equivalente",
+      "Corregir la documentación técnica y revisar inventores y derechos"
+    ],
+    "en": [
+      "L1₀ ordering, composition and microstructure characterization",
+      "Hysteresis, coercivity, remanence and BHmax with measurement conditions",
+      "Thermal stability, manufacturing and matched comparisons",
+      "Correct technical documentation and review inventorship and rights"
+    ]
+  },
+  "rights_notice": "No patent filing, grant, exclusivity, freedom to operate or laboratory validation is established by this summary.",
+  "robot_protocol_status": "Drafts, where available, were syntax-checked only. Not executed on a robot or validated as material synthesis.",
+  "engine_modified": false
+}

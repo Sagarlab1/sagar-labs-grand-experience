@@ -1,0 +1,70 @@
+{
+  "product_code": "SL/000",
+  "title": "Titan PI-KAN Research Engine",
+  "classification": "unvalidated_research_prototype",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "ESTIMATED"
+  ],
+  "review_date": "2026-11-16",
+  "commercial_reference": {
+    "es": "USD 120,000 / propuesta",
+    "en": "USD 120,000 / proposal",
+    "status": "proposed_subject_to_scope_rights_and_validation"
+  },
+  "summary": {
+    "es": "Prototipo local de PyTorch con capas KAN y bases B-spline para explorar modelos de evaluación numérica. Se presenta como software de investigación en desarrollo.",
+    "en": "A local PyTorch prototype with KAN layers and B-spline bases for exploring numerical evaluation models. Presented as research software in development."
+  },
+  "metrics": {
+    "es": [
+      {
+        "value": "PyTorch 2.2.2",
+        "label": "Entorno comprobado en la revisión local"
+      },
+      {
+        "value": "12 → 64 → 64 → 4",
+        "label": "Dimensiones del prototipo inspeccionado"
+      },
+      {
+        "value": "3 llamadas",
+        "label": "Misma entrada; salidas distintas en la prueba de repetibilidad"
+      }
+    ],
+    "en": [
+      {
+        "value": "PyTorch 2.2.2",
+        "label": "Environment checked in the local review"
+      },
+      {
+        "value": "12 → 64 → 64 → 4",
+        "label": "Inspected prototype dimensions"
+      },
+      {
+        "value": "3 calls",
+        "label": "Same input; different outputs in the repeatability check"
+      }
+    ]
+  },
+  "evidence_review": {
+    "es": "El prototipo implementa capas KAN/B-splines. La revisión no encontró carga de pesos entrenados en la función evaluada; una prueba con la misma entrada produjo salidas diferentes. La confianza reportada no está calibrada y el ahorro de energía del informe no procede de una medición comparativa aportada. Los 99.98%, 1.95 ms y cero alucinación no se presentan como prestaciones verificadas ni como garantía formal.",
+    "en": "The prototype implements KAN/B-spline layers. The evaluated function did not load trained weights; a same-input check produced different outputs. Reported confidence is not calibrated, and the report’s energy savings do not come from a supplied comparative measurement. The 99.98%, 1.95 ms and zero-hallucination figures are not presented as verified performance or a formal guarantee."
+  },
+  "requirements": {
+    "es": [
+      "Datos, pesos entrenados persistentes, versión y tarea definidos",
+      "Evaluación independiente, calibración y reproducibilidad",
+      "Comparación de precisión, latencia y energía en hardware y cargas equivalentes",
+      "Pruebas explícitas de restricciones físicas y gestión de fallos"
+    ],
+    "en": [
+      "Defined data, persistent trained weights, version and task",
+      "Independent evaluation, calibration and reproducibility",
+      "Matched accuracy, latency and energy comparisons on equivalent hardware and workloads",
+      "Explicit physical-constraint tests and failure handling"
+    ]
+  },
+  "rights_notice": "No patent filing, grant, exclusivity, freedom to operate or laboratory validation is established by this summary.",
+  "robot_protocol_status": "Drafts, where available, were syntax-checked only. Not executed on a robot or validated as material synthesis.",
+  "engine_modified": false
+}

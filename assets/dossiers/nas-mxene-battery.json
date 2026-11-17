@@ -1,0 +1,70 @@
+{
+  "product_code": "SL/000",
+  "title": "MXene-hosted Na-S battery",
+  "classification": "synthetic_candidate",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "ESTIMATED"
+  ],
+  "review_date": "2026-11-16",
+  "commercial_reference": {
+    "es": "USD 75,000 / propuesta",
+    "en": "USD 75,000 / proposal",
+    "status": "proposed_subject_to_scope_rights_and_validation"
+  },
+  "summary": {
+    "es": "Concepto de batería de sodio-azufre con matriz MXene para estudiar confinamiento de polisulfuros y almacenamiento estacionario. Candidato generado, pendiente de caracterización y ensayos.",
+    "en": "A sodium-sulfur battery concept using an MXene host to study polysulfide confinement and stationary storage. A generated candidate awaiting characterization and testing."
+  },
+  "metrics": {
+    "es": [
+      {
+        "value": "503.4 Wh/kg",
+        "label": "Energía específica generada; sin ensayo de celda"
+      },
+      {
+        "value": "95.4%",
+        "label": "Retención generada; no son 500 ciclos medidos"
+      },
+      {
+        "value": "USD 32.7/kWh",
+        "label": "Coste sintético; campo del generador referido a pack"
+      }
+    ],
+    "en": [
+      {
+        "value": "503.4 Wh/kg",
+        "label": "Generated specific energy; no cell test"
+      },
+      {
+        "value": "95.4%",
+        "label": "Generated retention; not 500 measured cycles"
+      },
+      {
+        "value": "USD 32.7/kWh",
+        "label": "Synthetic cost; generator field refers to a pack"
+      }
+    ]
+  },
+  "evidence_review": {
+    "es": "El candidato NaS-MXene-Ti3C2Tx-Porous-S-85.7% existe en SQLite. Su generador combina una energía base con carga de azufre y perturbación aleatoria; retención y coste se asignan con rangos aleatorios. Existe un borrador robótico de pipeteo y un borrador documental de patente. No se aportan ensayo electroquímico, caracterización de fase, validación de seguridad o comprobante de presentación de patente.",
+    "en": "The NaS-MXene-Ti3C2Tx-Porous-S-85.7% candidate exists in SQLite. Its generator combines baseline energy, sulfur loading and a random perturbation; retention and cost are assigned from random ranges. A liquid-handling script draft and a patent-document draft exist. Electrochemical testing, phase characterization, safety validation and a patent filing receipt have not been supplied."
+  },
+  "requirements": {
+    "es": [
+      "Definir composición, electrolito, masa activa y masa de la celda completa",
+      "Síntesis, caracterización, ciclos y condiciones de medición reproducibles",
+      "Balance de masas, incertidumbre y referencia equivalente",
+      "Revisión del protocolo Flex y de derechos de propiedad intelectual"
+    ],
+    "en": [
+      "Define composition, electrolyte, active mass and complete-cell mass",
+      "Reproducible synthesis, characterization, cycling and measurement conditions",
+      "Mass balance, uncertainty and matched baseline",
+      "Flex protocol review and intellectual-property rights assessment"
+    ]
+  },
+  "rights_notice": "No patent filing, grant, exclusivity, freedom to operate or laboratory validation is established by this summary.",
+  "robot_protocol_status": "Drafts, where available, were syntax-checked only. Not executed on a robot or validated as material synthesis.",
+  "engine_modified": false
+}
